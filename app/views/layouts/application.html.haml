@@ -2,10 +2,13 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"}
     %title Cue
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:name => "viewport", :content => "width=device-width"}/
   %body
+    = render partial: 'layouts/navbar'
     = yield
