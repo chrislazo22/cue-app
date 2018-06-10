@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'homepage#index'
 
-  resources :host, only: [:index]
+  resources :hosts, only: [:index]
+
+  get '/auth/spotify/callback', to: 'users#spotify'
 end
