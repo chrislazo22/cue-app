@@ -29,5 +29,8 @@ module Cue
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+
   end
 end
+RSpotify::authenticate(ENV["client_id"], ENV["client_secret"])
