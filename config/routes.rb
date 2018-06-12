@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   resources :hosts, only: [:index]
 
-  get '/auth/spotify/callback', to: 'users#spotify'
+  get '/auth/spotify/callback', to: 'hosts#spotify'
 end
