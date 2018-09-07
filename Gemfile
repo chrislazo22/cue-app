@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'haml-rails', '~> 1.0'
+gem 'figaro'
+gem 'rspotify'
 gem 'rubocop', '~> 0.56.0', require: false
 
 group :development, :test do
