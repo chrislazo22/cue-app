@@ -23,7 +23,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'figaro'
 gem 'haml-rails', '~> 1.0'
+gem 'rspotify'
 gem 'rubocop', '~> 0.56.0', require: false
 
 group :development, :test do
