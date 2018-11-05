@@ -3,8 +3,18 @@
 require 'rails_helper'
 
 RSpec.describe 'homepage/index', type: :view do
-  it 'has host sign in link' do
+  it 'has a header' do
     render
-    assert_select '.row.center a', text: 'Host Sign In', count: 1
+    assert_select '.headline h1', count: 1
+  end
+
+  it 'has host sign in button' do
+    render
+    assert_select '.host-button button', count: 1
+  end
+
+  it 'has a guest sign in button' do
+    render
+    assert_select '.guest-button', count: 1
   end
 end
