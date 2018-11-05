@@ -13,3 +13,23 @@
  *= require_self
  *= require_tree ./base
  */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Background Image */
+.background {
+    background: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
