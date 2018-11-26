@@ -7,6 +7,6 @@
           %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
     .row.justify-content-md-center
       .host-button
-        %button.btn.btn-dark Host Sign In
+        = button_to 'Host Sign In', '/auth/spotify', class: 'btn btn-dark'
       .guest-button
-        %button.btn.btn-light Guest Sign In
+        = button_to 'Guest Sign In', root_path, class: 'btn btn-light'
