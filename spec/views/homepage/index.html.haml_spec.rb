@@ -10,7 +10,7 @@ RSpec.describe 'homepage/index', type: :view do
 
   it 'has host sign in button' do
     render
-    assert_select '.host-button button', count: 1
+    assert_select '.host-button', count: 1
   end
 
   it 'has a guest sign in button' do
